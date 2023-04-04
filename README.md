@@ -1,2 +1,2 @@
 # SoftUni-Exercises
-Exercises for referance
+Exercise solutions for referance
