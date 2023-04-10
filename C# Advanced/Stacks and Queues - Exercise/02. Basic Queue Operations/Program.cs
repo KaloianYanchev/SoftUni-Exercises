@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
-namespace _01_Basic_Stack_Operations
+namespace _02_Basic_Queue_Operations
 {
     internal class Program
     {
@@ -17,28 +18,28 @@ namespace _01_Basic_Stack_Operations
                 .Select(int.Parse)
                 .ToArray();
 
-            int numberOfElementsToPush = input[0];
-            int numberOfElementsToPop = input[1];
+            int numberOfElementsToEnqueue = input[0];
+            int numberOfElementsToDequeue = input[1];
             int elementToFind = input[2];
 
-            Stack<int> stack = new Stack<int>();
+            Queue<int> queue = new Queue<int>();
 
-            for (int i = 0; i < numberOfElementsToPush; i++)
+            for (int i = 0; i < numberOfElementsToEnqueue; i++)
             {
-                stack.Push(listOfElements[i]);
+                queue.Enqueue(listOfElements[i]);
             }
 
-            for (int i = 0; i < numberOfElementsToPop; i++)
+            for (int i = 0; i < numberOfElementsToDequeue; i++)
             {
-                int currentElement = stack.Pop();
+                queue.Dequeue();
             }
 
-            bool isFound = stack.Contains(elementToFind);
+            bool isFound = queue.Contains(elementToFind);
             int smallestElement = 0;
 
-            if (stack.Count > 0)
+            if (queue.Count > 0)
             {
-                smallestElement = stack.Min();
+                smallestElement = queue.Min();
             }
 
             if (isFound)
