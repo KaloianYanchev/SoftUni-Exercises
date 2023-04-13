@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _04_Fast_Food
+namespace _05_Fashion_Boutique
 {
     internal class Program
     {
