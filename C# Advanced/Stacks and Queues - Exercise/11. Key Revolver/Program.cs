@@ -29,61 +29,42 @@ namespace _11_Key_Revolver
                 gunBarrelSize = bullets.Count;
             }
 
-            bool endProgramCondition = false;
+            int barrelCount = 0;
 
-            while (bullets.Count != 0 || locks.Count != 0)
+            while (bullets.Count >= 0)
             {
-                if (endProgramCondition)
+                barrelCount++;
+                if (locks.Count == 0)
                 {
+                    int moneyEarned = inteligenceValue - bulletsCost;
+                    Console.WriteLine($"{bullets.Count} bullets left. Earned ${moneyEarned}");
+                    break;
+                }
+                if (bullets.Count == 0)
+                {
+                    Console.WriteLine($"Couldn't get through. Locks left: {locks.Count}");
                     break;
                 }
 
-                for (int i = 0; i < gunBarrelSize; i++)
+                int currentBullet = bullets.Pop();
+                int currentLock = locks.Peek();
+                bulletsCost += pricePerBullet;
+
+                if (currentBullet <= currentLock)
                 {
-                    if (locks.Count == 0)
-                    {
-                        int moneyEarned = inteligenceValue - bulletsCost;
-                        Console.WriteLine($"{bullets.Count} bullets left. Earned ${moneyEarned}");
-                        endProgramCondition = true;
-                        break;
-                    }
-                    if (bullets.Count == 0)
-                    {
-                        Console.WriteLine($"Couldn't get through. Locks left: {locks.Count}");
-                        endProgramCondition = true;
-                        break;
-                    }
-
-                    int currentBullet = bullets.Pop();
-                    int currentLock = locks.Peek();
-                    bulletsCost += pricePerBullet;
-
-                    if (currentBullet <= currentLock)
-                    {
-                        Console.WriteLine("Bang!");
-                        locks.Dequeue();
-                    }
-                    else
-                    {
-                        Console.WriteLine("Ping!");
-                    }
+                    Console.WriteLine("Bang!");
+                    locks.Dequeue();
                 }
-                if (bullets.Count != 0)
+                else
+                {
+                    Console.WriteLine("Ping!");
+                }
+
+                if (barrelCount == gunBarrelSize && bullets.Count != 0)
                 {
                     Console.WriteLine("Reloading!");
+                    barrelCount = 0;
                 }
-
-                //if (locks.Count == 0)
-                //{
-                //    int moneyEarned = inteligenceValue - bulletsCost;
-                //    Console.WriteLine($"{bullets.Count} bullets left. Earned ${moneyEarned}");
-                //    break;
-                //}
-                //else if (bullets.Count == 0)
-                //{
-                //    Console.WriteLine($"Couldn't get through. Locks left: {locks.Count}");
-                //    break;
-                //}
             }
         }
     }
