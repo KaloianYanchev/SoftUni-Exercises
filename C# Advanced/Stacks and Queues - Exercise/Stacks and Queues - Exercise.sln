@@ -15,15 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05. Fashion Boutique", "05.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06. Songs Queue", "06. Songs Queue\06. Songs Queue.csproj", "{A53CA3CD-4CDF-43D2-B01F-325D0E8B2245}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. Truck Tour", "07. Truck Tour\07. Truck Tour.csproj", "{A831CAE5-E82F-4792-98BA-C0A3A7844B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Truck Tour", "07. Truck Tour\07. Truck Tour.csproj", "{A831CAE5-E82F-4792-98BA-C0A3A7844B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. Balanced Parenthesis", "08. Balanced Parenthesis\08. Balanced Parenthesis.csproj", "{A9C7AC69-71D9-40EB-96E6-AAF82601DDCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. Balanced Parenthesis", "08. Balanced Parenthesis\08. Balanced Parenthesis.csproj", "{A9C7AC69-71D9-40EB-96E6-AAF82601DDCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Simple Text Editor", "09. Simple Text Editor\09. Simple Text Editor.csproj", "{03DCE3E4-4715-4FBC-83CB-FB7CD4D7980B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09. Simple Text Editor", "09. Simple Text Editor\09. Simple Text Editor.csproj", "{03DCE3E4-4715-4FBC-83CB-FB7CD4D7980B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Crossroads", "10. Crossroads\10. Crossroads.csproj", "{F8A141EF-F264-4832-B524-545F011E97E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10. Crossroads", "10. Crossroads\10. Crossroads.csproj", "{F8A141EF-F264-4832-B524-545F011E97E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Key Revolver", "11. Key Revolver\11. Key Revolver.csproj", "{E3B52E6D-D2F3-4A98-ACCE-FD66EF8E26D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11. Key Revolver", "11. Key Revolver\11. Key Revolver.csproj", "{E3B52E6D-D2F3-4A98-ACCE-FD66EF8E26D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. Cups and Bottles", "12. Cups and Bottles\12. Cups and Bottles.csproj", "{5091270B-0EF3-49B4-8DAC-EE7135340668}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{E3B52E6D-D2F3-4A98-ACCE-FD66EF8E26D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3B52E6D-D2F3-4A98-ACCE-FD66EF8E26D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3B52E6D-D2F3-4A98-ACCE-FD66EF8E26D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5091270B-0EF3-49B4-8DAC-EE7135340668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5091270B-0EF3-49B4-8DAC-EE7135340668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5091270B-0EF3-49B4-8DAC-EE7135340668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5091270B-0EF3-49B4-8DAC-EE7135340668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
