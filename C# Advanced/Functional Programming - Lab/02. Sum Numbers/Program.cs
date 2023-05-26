@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace _02_Sum_Numbers
 {
@@ -6,9 +7,25 @@ namespace _02_Sum_Numbers
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
+            int[] numbers = Console.ReadLine()
+                .Split(", ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToArray();
 
+            Func<int[], string> sumFunk = SumNumbers;
+            Func<int[], int> countFunk = CountNumbers;
 
+            Console.WriteLine(countFunk(numbers));
+            Console.WriteLine(sumFunk(numbers));
+        }
+
+        static string SumNumbers(int[] numbers)
+        {
+            return $"{numbers.Sum(x => x)}";
+        }
+        static int CountNumbers(int[] numbers)
+        {
+            return numbers.Count();
         }
     }
 }
