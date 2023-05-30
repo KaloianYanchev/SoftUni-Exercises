@@ -48,8 +48,8 @@ namespace _05_Applied_Arithmetics
                 }
                 else
                 {
-                    //listOfNumbers = operation(command, listOfNumbers);
-                    Operation(command, listOfNumbers);
+                    listOfNumbers = operation(command, listOfNumbers);
+                    //Operation(command, listOfNumbers);
                 }
 
             }
@@ -71,7 +71,6 @@ namespace _05_Applied_Arithmetics
                 {
                     array[i] = array[i] - 1;
                 }
-
             }
             return array;
         }
